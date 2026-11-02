@@ -46,7 +46,7 @@
     --clr-secondary-300: hsl(341 100% 83%);
     --clr-secondary-600: hsl(341 92% 62%);
 
-    --grd-primary: linear-gradient(in oklab, hsl(322 87% 55%), hsl(13 100% 64%));
+    --grd-primary: linear-gradient(in oklab, hsl(13 100% 64%), hsl(322 87% 55%) );
     --grd-secondary: linear-gradient(in oklab, hsl(237 100% 64%), hsl(322 87% 55%));
 }
 
@@ -57,7 +57,6 @@
 body {
     margin: 0;
     line-height: 1.5;
-    background: var(--grd-primary);
     font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -74,4 +73,67 @@ textarea, select {
 img {
     display: block;
     max-inline-size: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--clr-primary-900);
+    font-size: var(--fnt-sz-500);
+    font-weight: 700;
+
+    padding: 0.75em 1.5em;
+    border-radius: 40px;
+}
+
+a:hover {
+    opacity: 0.65;
+}
+
+a:visted {
+    color: inherit;
+}
+
+header > div, footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-block: 24px;
+
+    text-align: center;
+}
+
+footer {
+    background: var(--clr-primary-900);
+}
+
+.page-wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+.logo-link {
+    background: none;
+}
+
+.logo-link:hover {
+    opacity: 1;
+}
+
+.course-link {
+    background: none;
+    color: var(--clr-secondary-600);
+}
+
+.hero-link {
+    background: var(--grd-primary);
+}
+
+.footer-link {
+    background: var(--grd-secondary);
+}
+
+.footer-link:hover {
+    opacity: 1;
+    filter: brightness(1.2);
 }
