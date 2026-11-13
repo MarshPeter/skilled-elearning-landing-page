@@ -32,7 +32,6 @@
 }
 
 :root {
-    --font-sz-400: 1rem;
     --fnt-sz-500: 1.125rem;
     --fnt-sz-600: 1.5rem;
     --fnt-sz-700: 2rem;
@@ -98,7 +97,7 @@ a:hover {
     opacity: 0.65;
 }
 
-a:visted {
+a:visited {
     color: inherit;
 }
 
@@ -109,10 +108,6 @@ header > div, footer > div {
     padding-block: 24px;
 
     text-align: center;
-}
-
-header > a {
-    max-width: 100%;
 }
 
 footer {
