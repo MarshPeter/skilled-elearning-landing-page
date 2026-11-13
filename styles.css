@@ -208,6 +208,7 @@ picture > img {
     @media (width <700px) {
         position: static;
         max-width: 100%;
+        margin: auto;
     }
 }
 
