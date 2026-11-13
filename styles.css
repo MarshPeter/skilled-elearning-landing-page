@@ -213,9 +213,16 @@ picture > img {
 
 .courses-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 3.5rem;
+
+    @media (width > 700px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (width > 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     padding-block-end: 4rem;
 }
